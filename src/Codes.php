@@ -260,6 +260,10 @@ class Codes
 		return (isset(static::$countries[$code])) ? static::$countries[$code] : 'Unknown';
 	}
 	
+	public static function isValid($code)
+	{
+		return isset(static::$countries[$code]);
+	}
 	
 	public static function select($class = '', $name = 'country', $selected = null)
 	{
