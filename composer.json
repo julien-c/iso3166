@@ -11,7 +11,9 @@
     "require": {
     },
     "autoload": {
-        "psr-4": {"Iso3166\\": "src/"}
+        "psr-4": {
+            "Iso3166\\": "src/"
+        }
     },
     "version": "1.1.0"
 }
