@@ -4,7 +4,7 @@ namespace Iso3166;
 class Codes
 {
 	// Thank you 
-	// https://gist.github.com/vxnick/380904
+	// https://gist.github.com/vxnick/380904#gistcomment-1433576
 	
 	public static $countries = array(
 		    'AF' => 'Afghanistan',
