@@ -48,7 +48,6 @@ class Codes
     'KH' => 'Cambodia',
     'CM' => 'Cameroon',
     'CA' => 'Canada',
-    'IC' => 'Canary Islands',
     'CV' => 'Cape Verde',
     'KY' => 'Cayman Islands',
     'CF' => 'Central African Republic',
