@@ -263,12 +263,12 @@ class Codes
 	
 	public static function map($code)
 	{
-		return (isset(static::$countries[$code])) ? static::$countries[$code] : $code;
+		return (isset(static::$countries[strtoupper($code]))) ? static::$countries[$code] : $code;
 	}
 	
 	public static function isValid($code)
 	{
-		return isset(static::$countries[$code]);
+		return isset(static::$countries[strtoupper($code])]);
 	}
 	
 	public static function select($class = '', $name = 'country', $selected = null)
