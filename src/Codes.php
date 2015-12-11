@@ -256,14 +256,14 @@ class Codes
     'EH' => 'Western Sahara',
     'YE' => 'Yemen',
     'ZM' => 'Zambia',
-    'ZW' => 'Zimbabwe',
+    'ZW' => 'Zimbabwe'
 	);
 
 
 	
 	public static function map($code)
 	{
-		return (isset(static::$countries[strtoupper($code]))) ? static::$countries[$code] : $code;
+		return (isset(static::$countries[strtoupper($code)])) ? static::$countries[strtoupper($code)] : $code;
 	}
 	
 	public static function isValid($code)
