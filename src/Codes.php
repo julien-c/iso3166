@@ -268,7 +268,7 @@ class Codes
 	
 	public static function isValid($code)
 	{
-		return isset(static::$countries[strtoupper($code])]);
+		return isset(static::$countries[strtoupper($code)]);
 	}
 	
 	public static function select($class = '', $name = 'country', $selected = null)
