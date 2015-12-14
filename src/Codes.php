@@ -260,8 +260,6 @@ class Codes
 		    'ZW' => 'Zimbabwe'
 	);
 
-
-	
 	public static function map($code)
 	{
 		return (isset(static::$countries[strtoupper($code)])) ? static::$countries[strtoupper($code)] : $code;
