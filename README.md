@@ -5,7 +5,7 @@ ISO 3166-1 alpha-2 mapping:
 
 Get Country Name:
 ```php
-echo Iso3166\Codes::map('FR');
+echo Iso3166\Codes::country('FR');
 // 'France'
 ```
 
