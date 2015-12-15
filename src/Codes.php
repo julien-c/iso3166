@@ -544,7 +544,8 @@ class Codes
 	{
 		return isset(static::$countries[strtoupper($code)]);
 	}
-	
+
+        // kept for backward compatibility. Use countrySelector() method for better naming.
 	public static function select($class = '', $name = 'country', $selected = null)
 	{
 		return sprintf('<select class="%s" name="%s">', $class, $name)
@@ -555,4 +556,17 @@ class Codes
 			}, static::$countries, array_keys(static::$countries)))
 			. '</select>';
 	}
+
+        // same as select() method but better naming.
+	public static function countrySelector($class = '', $name = 'country', $selected = null)
+	{
+		return sprintf('<select class="%s" name="%s">', $class, $name)
+			. implode(array_map(function($country, $code) use($selected) {
+				return ($code == $selected)
+					? sprintf('<option value="%s" selected>%s</option>', $code, $country)
+					: sprintf('<option value="%s">%s</option>', $code, $country);
+			}, static::$countries, array_keys(static::$countries)))
+			. '</select>';
+	}
+
 }
