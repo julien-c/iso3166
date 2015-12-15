@@ -528,7 +528,7 @@ class Codes
 		return (isset(static::$phoneCodes[strtoupper($code)])) ? static::$phoneCodes[strtoupper($code)] : 'N/A';
 	}
 
-	public static function continents($code)
+	public static function continent($code)
 	{
 		return (isset(static::$continents[strtoupper($code)])) ? static::$continents[strtoupper($code)] : 'Invalid Code';
 	}
