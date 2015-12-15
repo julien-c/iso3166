@@ -24,7 +24,7 @@ echo Iso3166\Codes::continent('EU');
 Plus one super handy helper:
 
 ```php
-echo Iso3166\Codes::select('class', 'name', 'FR');
+echo Iso3166\Codes::countrySelector('class', 'name', 'FR');
 ```
 
 will output:
