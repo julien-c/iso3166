@@ -518,7 +518,14 @@ class Codes
 		    "SA" => "South America"
 	);
 
+        // kept for backward compatibility. Use country() method for better naming.
 	public static function map($code)
+	{
+		return (isset(static::$countries[strtoupper($code)])) ? static::$countries[strtoupper($code)] : $code;
+	}
+
+        // same as map() method but better naming.
+	public static function country($code)
 	{
 		return (isset(static::$countries[strtoupper($code)])) ? static::$countries[strtoupper($code)] : $code;
 	}
