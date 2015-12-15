@@ -260,6 +260,20 @@ class Codes
 		    'ZW' => 'Zimbabwe'
 	);
 
+	public static $continents = array(
+		    "AS" => "Asia",
+		    "EU" => "Europa",
+		    "AF" => "Africa",
+		    "NA" => "North America",
+		    "SA" => "South America",
+		    "OC" => "Oceania"
+	);
+
+	public static function continents($code)
+	{
+		return (isset(static::$continents[strtoupper($code)])) ? static::$continents[strtoupper($code)] : 'Invalid Code';
+	}
+	
 	public static function map($code)
 	{
 		return (isset(static::$countries[strtoupper($code)])) ? static::$countries[strtoupper($code)] : $code;
