@@ -261,12 +261,13 @@ class Codes
 	);
 
 	public static $continents = array(
+		    "AF" => "Africa",
+		    "AN" => "Antarctica",
 		    "AS" => "Asia",
 		    "EU" => "Europa",
-		    "AF" => "Africa",
 		    "NA" => "North America",
-		    "SA" => "South America",
-		    "OC" => "Oceania"
+		    "OC" => "Oceania",
+		    "SA" => "South America"
 	);
 
 	public static function continents($code)
